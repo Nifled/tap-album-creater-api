@@ -4,6 +4,7 @@ from django.db import models
 class Album(models.Model):
     artist = models.CharField(max_length=50)
     title = models.CharField(max_length=200)
+    release = models.IntegerField()
     genre = models.CharField(max_length=100)
     cover_url = models.TextField()
 
